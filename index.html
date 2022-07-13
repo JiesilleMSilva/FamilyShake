@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h3>Searching now...</h3>
+    </div>
+    <div class="hero-bg"> <!--hero = upper part-->
+
+        <section class="top">
+
+            <!--for the logo-->
+            <header>
+                <a href="#">family.shake</a>
+            </header>
+
+            <h1><span>A Refreshing</span> Drink for Everyone</h1>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur mollitia quas error aliquid laborum beatae exercitationem asperiores animi laudantium voluptate. Doloremque, quia! Nihil laudantium quas sit, assumenda dolorem dolorum excepturi!</p>
+
+            <!--fill up form-->
+            <div class="form-container"> 
+
+                <form action="">
+                    <div class="form-left">
+                        <label for="flavor">Enter desired flavor: </label>
+                        
+                        <!--for text box-->
+                        <input type="text" name="flavor" id="flavor">
+
+                        <p>Example: "Chocolate"</p>
+                    </div>
+                    
+                    <!--for button-->
+                    <input type="button" value="Find Flavor Now" id="cta-btn">
+                </form>
+
+            </div>
+            <!--end of fill up form-->
+
+        </section>
+
+    </div>
+
+    <section class="aboutus">
+        <div class="right-col">
+            <h2>About Us</h2>   
+            <p> Cellphone: 0918-206-8650 </p>
+            <p> Landline: 471-8770 </p>
+            <p> Location: B5 L35 Molave St. Camella Seville, Habay II, Bacoor City, Cavite. </p>
+        </div>
+
+        <!--inserting image-->
+        <img src="images/shake.jpg" alt="A Shake with Pearls">
+    </section>
+
+    <script>
+        
+        let btn = document.getElementById('cta-btn');
+        let overlay = document.getElementById('overlay');
+
+        btn.addEventListener('click', () => {
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay');
+        })
+
+    </script>
+</body>
+</html>
